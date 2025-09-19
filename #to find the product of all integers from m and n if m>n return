@@ -1,0 +1,10 @@
+m=int(input("enter the m value:"))
+n=int(input("enter the n value:"))
+def product_of_all(m,n):
+    if m>n:
+        return "invalid"
+    a=1
+    for i in range(m, n+1):
+        a *= i
+    return a
+print("product of all integers=",product_of_all(m,n))
