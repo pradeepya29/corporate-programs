@@ -1,0 +1,13 @@
+m=int(input("enter the m value:"))
+n=int(input("enter the n value:"))
+def product_even(m,n):
+    if m>n:
+        return "invalid"
+    a=1
+    found=False
+    for i in range(m, n+1):
+        if i%2==0:
+            a *= i
+            found=True
+    return a if found else 0
+print("product of even numbers=",product_even(m,n))
